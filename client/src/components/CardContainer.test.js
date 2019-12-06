@@ -7,4 +7,6 @@ afterEach(rtl.cleanup);
 
 it('renders without crashing', () => {
   const wrapper = rtl.render(<CardContainer />);
+  const nameElement = wrapper.queryByText(/name/i)
+    expect(nameElement).toBeInDocument();
 });

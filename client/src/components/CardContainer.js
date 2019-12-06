@@ -1,10 +1,13 @@
 import React from 'react';
-// import Card from './Card';
+import Input from './Input';
+
 export default class CardContainer extends React.Component{
     render(){
+        
         return(
             <div className="playerInfo">
-                {console.log(this.props)}
+                
+                {/* {console.log(this.props)} */}
               <h3>
                Country: {this.props.player.country}
               </h3>

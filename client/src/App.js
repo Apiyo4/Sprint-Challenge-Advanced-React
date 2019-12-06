@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 import CardContainer from './components/CardContainer';
+import Input from './components/Input';
 
 export default class App extends React.Component {
   // useEffect(()=>{
@@ -30,8 +31,10 @@ export default class App extends React.Component {
   render(){
     return (
       <div className="App">
+
         {console.log(this.state.players)}
-        Welcome
+        <h1>Women's World cup Players</h1>
+        <Input players={this.state.players} />
         <div className="playersInfo">
           {this.state.players.map(player=>{
             return <CardContainer player={player} key={player.id} />
