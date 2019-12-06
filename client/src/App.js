@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
+import CardContainer from './components/CardContainer';
 
 export default class App extends React.Component {
   // useEffect(()=>{
@@ -12,26 +13,33 @@ export default class App extends React.Component {
   constructor(){
     super();
     this.state= {
-      player : [],
+      players : [],
     }
   }
   componentDidMount(){
     axios.get("http://localhost:5000/api/players")
       .then(res=>{
-        // console.log(res.data)
         this.setState({
-         player: res.data
+         players: res.data
         })
-        // console.log(this.state.player)
+        
       } )
       .catch(err=> console.log(err))
-      // console.log(this.state.player)
   }
+  
   render(){
     return (
       <div className="App">
-      {console.log(this.state.player)}
+        {console.log(this.state.players)}
         Welcome
+        <div className="playersInfo">
+          {this.state.players.map(player=>{
+            return <CardContainer player={player} key={player.id} />
+          })}
+        </div>
+        
+  
+        
       </div>
     );
   }
