@@ -23,9 +23,24 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+
+I would use Class components instead of functional components for the following reasons-
+	1. When building large applications that need specialized libraries such as REDUX.
+	2. When tapping into other functionalities not supported by the React API such as liifecycle components
+
 - [ ] Name three lifecycle methods and their purposes.
+
+1.componentDidMount- used immediately after the first DOM surgery, best time to use is when fetching data from an API.
+2.componentDidUpdate - used to update DOM in response to prop or state changes
+3.componentWillUnmount- used to cancel any outgoing network request or remove all event listeners.
+
 - [ ] What is the purpose of a custom hook?
+
+Through custom hooks we're able to write clean codes without repeating ourselves. This makes it easy for us to debug code or when we want to make changes do it in one place.
+
 - [ ] Why is it important to test our apps?
+
+Testing enable us to get and resolve bugs earlier on in our work, this means that we don't have to do it later on when we've done so many things hence not sure where the bug occurred, as a result we're able to save a lot of time that would have been used in debug to do something else.
 
 ## Project Set Up
 

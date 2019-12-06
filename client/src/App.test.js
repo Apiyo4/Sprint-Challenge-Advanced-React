@@ -7,5 +7,6 @@ afterEach(rtl.cleanup);
 
 it('renders without crashing', () => {
   const wrapper = rtl.render(<App />)
-  wrapper.debug
+  const welcomeElement = wrapper.queryByText(/welcome/i)
+
 });
