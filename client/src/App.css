@@ -2,32 +2,26 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.playersInfo{
+  margin: auto;
+width: 80%;
+margin-top: 50px;
+margin-bottom: 50px;
+    border: 3px solid #817f7f;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap : wrap;
+    padding-top:3%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.playerInfo{
+  height: 150px;
+  width: 30%;
+  box-shadow: 1px 1px #cbcbcb, -0.5em -0.2em 0.4em #cbcbcb;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
 }
